@@ -1,0 +1,36 @@
+{
+  "metadata": {
+    "schema_version": 1,
+    "generated_at_utc": "2026-09-16T06:14:59.476588+00:00",
+    "dataset_root": "PetImages",
+    "class_labels": {
+      "Cat": 0,
+      "Dog": 1
+    },
+    "validation_method": "Pillow verify followed by reopen and full pixel load",
+    "dimension_statistics_scope": "valid images only"
+  },
+  "summary": {
+    "total_files_scanned": 24998,
+    "total_valid_images": 24998,
+    "total_invalid_images": 0,
+    "valid_count_per_class": {
+      "Cat": 12499,
+      "Dog": 12499
+    },
+    "invalid_count_per_class": {
+      "Cat": 0,
+      "Dog": 0
+    },
+    "image_extension_counts": {
+      ".jpg": 24998
+    },
+    "minimum_width": 4,
+    "maximum_width": 500,
+    "average_width": 404.45,
+    "minimum_height": 4,
+    "maximum_height": 500,
+    "average_height": 360.99
+  },
+  "invalid_image_paths": []
+}
