@@ -1,0 +1,633 @@
+{
+  "metadata": {
+    "schema_version": 1,
+    "generated_at_utc": "2026-09-16T06:47:29.428572+00:00",
+    "dataset_root": "PetImages",
+    "class_labels": {
+      "Cat": 0,
+      "Dog": 1
+    },
+    "ranked_candidates_per_list": 30,
+    "aspect_ratio_definition": "width / height",
+    "aspect_ratio_extremeness_definition": "max(width / height, height / width)",
+    "selection_policy": "ranking only; no exclusion threshold applied"
+  },
+  "summary": {
+    "total_images_analyzed": 24998,
+    "minimum_width": 4,
+    "maximum_width": 500,
+    "average_width": 404.45,
+    "minimum_height": 4,
+    "maximum_height": 500,
+    "average_height": 360.99,
+    "minimum_area": 16,
+    "maximum_area": 250000,
+    "average_area": 151512.69,
+    "minimum_aspect_ratio": 0.306,
+    "maximum_aspect_ratio_extremeness": 5.939394
+  },
+  "smallest_images": [
+    {
+      "path": "PetImages/Cat/5673.jpg",
+      "class_name": "Cat",
+      "label": 0,
+      "width": 4,
+      "height": 4,
+      "pixel_area": 16,
+      "aspect_ratio": 1.0,
+      "aspect_ratio_extremeness": 1.0
+    },
+    {
+      "path": "PetImages/Dog/10747.jpg",
+      "class_name": "Dog",
+      "label": 1,
+      "width": 50,
+      "height": 39,
+      "pixel_area": 1950,
+      "aspect_ratio": 1.282051,
+      "aspect_ratio_extremeness": 1.282051
+    },
+    {
+      "path": "PetImages/Cat/6402.jpg",
+      "class_name": "Cat",
+      "label": 0,
+      "width": 60,
+      "height": 33,
+      "pixel_area": 1980,
+      "aspect_ratio": 1.818182,
+      "aspect_ratio_extremeness": 1.818182
+    },
+    {
+      "path": "PetImages/Cat/5534.jpg",
+      "class_name": "Cat",
+      "label": 0,
+      "width": 60,
+      "height": 36,
+      "pixel_area": 2160,
+      "aspect_ratio": 1.666667,
+      "aspect_ratio_extremeness": 1.666667
+    },
+    {
+      "path": "PetImages/Dog/9705.jpg",
+      "class_name": "Dog",
+      "label": 1,
+      "width": 60,
+      "height": 39,
+      "pixel_area": 2340,
+      "aspect_ratio": 1.538462,
+      "aspect_ratio_extremeness": 1.538462
+    },
+    {
+      "path": "PetImages/Cat/4821.jpg",
+      "class_name": "Cat",
+      "label": 0,
+      "width": 60,
+      "height": 40,
+      "pixel_area": 2400,
+      "aspect_ratio": 1.5,
+      "aspect_ratio_extremeness": 1.5
+    },
+    {
+      "path": "PetImages/Cat/2433.jpg",
+      "class_name": "Cat",
+      "label": 0,
+      "width": 60,
+      "height": 41,
+      "pixel_area": 2460,
+      "aspect_ratio": 1.463415,
+      "aspect_ratio_extremeness": 1.463415
+    },
+    {
+      "path": "PetImages/Cat/10392.jpg",
+      "class_name": "Cat",
+      "label": 0,
+      "width": 50,
+      "height": 50,
+      "pixel_area": 2500,
+      "aspect_ratio": 1.0,
+      "aspect_ratio_extremeness": 1.0
+    },
+    {
+      "path": "PetImages/Cat/6614.jpg",
+      "class_name": "Cat",
+      "label": 0,
+      "width": 50,
+      "height": 50,
+      "pixel_area": 2500,
+      "aspect_ratio": 1.0,
+      "aspect_ratio_extremeness": 1.0
+    },
+    {
+      "path": "PetImages/Dog/10733.jpg",
+      "class_name": "Dog",
+      "label": 1,
+      "width": 42,
+      "height": 63,
+      "pixel_area": 2646,
+      "aspect_ratio": 0.666667,
+      "aspect_ratio_extremeness": 1.5
+    },
+    {
+      "path": "PetImages/Cat/5527.jpg",
+      "class_name": "Cat",
+      "label": 0,
+      "width": 60,
+      "height": 45,
+      "pixel_area": 2700,
+      "aspect_ratio": 1.333333,
+      "aspect_ratio_extremeness": 1.333333
+    },
+    {
+      "path": "PetImages/Dog/1324.jpg",
+      "class_name": "Dog",
+      "label": 1,
+      "width": 60,
+      "height": 45,
+      "pixel_area": 2700,
+      "aspect_ratio": 1.333333,
+      "aspect_ratio_extremeness": 1.333333
+    },
+    {
+      "path": "PetImages/Dog/11686.jpg",
+      "class_name": "Dog",
+      "label": 1,
+      "width": 60,
+      "height": 48,
+      "pixel_area": 2880,
+      "aspect_ratio": 1.25,
+      "aspect_ratio_extremeness": 1.25
+    },
+    {
+      "path": "PetImages/Dog/2965.jpg",
+      "class_name": "Dog",
+      "label": 1,
+      "width": 58,
+      "height": 50,
+      "pixel_area": 2900,
+      "aspect_ratio": 1.16,
+      "aspect_ratio_extremeness": 1.16
+    },
+    {
+      "path": "PetImages/Dog/7421.jpg",
+      "class_name": "Dog",
+      "label": 1,
+      "width": 58,
+      "height": 50,
+      "pixel_area": 2900,
+      "aspect_ratio": 1.16,
+      "aspect_ratio_extremeness": 1.16
+    },
+    {
+      "path": "PetImages/Dog/8570.jpg",
+      "class_name": "Dog",
+      "label": 1,
+      "width": 60,
+      "height": 50,
+      "pixel_area": 3000,
+      "aspect_ratio": 1.2,
+      "aspect_ratio_extremeness": 1.2
+    },
+    {
+      "path": "PetImages/Dog/2652.jpg",
+      "class_name": "Dog",
+      "label": 1,
+      "width": 61,
+      "height": 50,
+      "pixel_area": 3050,
+      "aspect_ratio": 1.22,
+      "aspect_ratio_extremeness": 1.22
+    },
+    {
+      "path": "PetImages/Dog/9246.jpg",
+      "class_name": "Dog",
+      "label": 1,
+      "width": 65,
+      "height": 47,
+      "pixel_area": 3055,
+      "aspect_ratio": 1.382979,
+      "aspect_ratio_extremeness": 1.382979
+    },
+    {
+      "path": "PetImages/Dog/10654.jpg",
+      "class_name": "Dog",
+      "label": 1,
+      "width": 60,
+      "height": 53,
+      "pixel_area": 3180,
+      "aspect_ratio": 1.132075,
+      "aspect_ratio_extremeness": 1.132075
+    },
+    {
+      "path": "PetImages/Dog/2188.jpg",
+      "class_name": "Dog",
+      "label": 1,
+      "width": 60,
+      "height": 55,
+      "pixel_area": 3300,
+      "aspect_ratio": 1.090909,
+      "aspect_ratio_extremeness": 1.090909
+    },
+    {
+      "path": "PetImages/Cat/8504.jpg",
+      "class_name": "Cat",
+      "label": 0,
+      "width": 67,
+      "height": 50,
+      "pixel_area": 3350,
+      "aspect_ratio": 1.34,
+      "aspect_ratio_extremeness": 1.34
+    },
+    {
+      "path": "PetImages/Dog/7011.jpg",
+      "class_name": "Dog",
+      "label": 1,
+      "width": 67,
+      "height": 50,
+      "pixel_area": 3350,
+      "aspect_ratio": 1.34,
+      "aspect_ratio_extremeness": 1.34
+    },
+    {
+      "path": "PetImages/Dog/3147.jpg",
+      "class_name": "Dog",
+      "label": 1,
+      "width": 69,
+      "height": 50,
+      "pixel_area": 3450,
+      "aspect_ratio": 1.38,
+      "aspect_ratio_extremeness": 1.38
+    },
+    {
+      "path": "PetImages/Cat/835.jpg",
+      "class_name": "Cat",
+      "label": 0,
+      "width": 60,
+      "height": 60,
+      "pixel_area": 3600,
+      "aspect_ratio": 1.0,
+      "aspect_ratio_extremeness": 1.0
+    },
+    {
+      "path": "PetImages/Dog/1381.jpg",
+      "class_name": "Dog",
+      "label": 1,
+      "width": 70,
+      "height": 52,
+      "pixel_area": 3640,
+      "aspect_ratio": 1.346154,
+      "aspect_ratio_extremeness": 1.346154
+    },
+    {
+      "path": "PetImages/Dog/11248.jpg",
+      "class_name": "Dog",
+      "label": 1,
+      "width": 100,
+      "height": 37,
+      "pixel_area": 3700,
+      "aspect_ratio": 2.702703,
+      "aspect_ratio_extremeness": 2.702703
+    },
+    {
+      "path": "PetImages/Dog/630.jpg",
+      "class_name": "Dog",
+      "label": 1,
+      "width": 74,
+      "height": 50,
+      "pixel_area": 3700,
+      "aspect_ratio": 1.48,
+      "aspect_ratio_extremeness": 1.48
+    },
+    {
+      "path": "PetImages/Dog/1174.jpg",
+      "class_name": "Dog",
+      "label": 1,
+      "width": 75,
+      "height": 50,
+      "pixel_area": 3750,
+      "aspect_ratio": 1.5,
+      "aspect_ratio_extremeness": 1.5
+    },
+    {
+      "path": "PetImages/Dog/11465.jpg",
+      "class_name": "Dog",
+      "label": 1,
+      "width": 60,
+      "height": 64,
+      "pixel_area": 3840,
+      "aspect_ratio": 0.9375,
+      "aspect_ratio_extremeness": 1.066667
+    },
+    {
+      "path": "PetImages/Cat/10277.jpg",
+      "class_name": "Cat",
+      "label": 0,
+      "width": 56,
+      "height": 75,
+      "pixel_area": 4200,
+      "aspect_ratio": 0.746667,
+      "aspect_ratio_extremeness": 1.339286
+    }
+  ],
+  "most_extreme_aspect_ratios": [
+    {
+      "path": "PetImages/Dog/4367.jpg",
+      "class_name": "Dog",
+      "label": 1,
+      "width": 196,
+      "height": 33,
+      "pixel_area": 6468,
+      "aspect_ratio": 5.939394,
+      "aspect_ratio_extremeness": 5.939394
+    },
+    {
+      "path": "PetImages/Cat/9171.jpg",
+      "class_name": "Cat",
+      "label": 0,
+      "width": 145,
+      "height": 39,
+      "pixel_area": 5655,
+      "aspect_ratio": 3.717949,
+      "aspect_ratio_extremeness": 3.717949
+    },
+    {
+      "path": "PetImages/Cat/5351.jpg",
+      "class_name": "Cat",
+      "label": 0,
+      "width": 500,
+      "height": 149,
+      "pixel_area": 74500,
+      "aspect_ratio": 3.355705,
+      "aspect_ratio_extremeness": 3.355705
+    },
+    {
+      "path": "PetImages/Dog/10749.jpg",
+      "class_name": "Dog",
+      "label": 1,
+      "width": 153,
+      "height": 500,
+      "pixel_area": 76500,
+      "aspect_ratio": 0.306,
+      "aspect_ratio_extremeness": 3.267974
+    },
+    {
+      "path": "PetImages/Cat/5773.jpg",
+      "class_name": "Cat",
+      "label": 0,
+      "width": 300,
+      "height": 94,
+      "pixel_area": 28200,
+      "aspect_ratio": 3.191489,
+      "aspect_ratio_extremeness": 3.191489
+    },
+    {
+      "path": "PetImages/Cat/11349.jpg",
+      "class_name": "Cat",
+      "label": 0,
+      "width": 500,
+      "height": 168,
+      "pixel_area": 84000,
+      "aspect_ratio": 2.97619,
+      "aspect_ratio_extremeness": 2.97619
+    },
+    {
+      "path": "PetImages/Cat/12243.jpg",
+      "class_name": "Cat",
+      "label": 0,
+      "width": 423,
+      "height": 145,
+      "pixel_area": 61335,
+      "aspect_ratio": 2.917241,
+      "aspect_ratio_extremeness": 2.917241
+    },
+    {
+      "path": "PetImages/Dog/11526.jpg",
+      "class_name": "Dog",
+      "label": 1,
+      "width": 300,
+      "height": 105,
+      "pixel_area": 31500,
+      "aspect_ratio": 2.857143,
+      "aspect_ratio_extremeness": 2.857143
+    },
+    {
+      "path": "PetImages/Dog/9632.jpg",
+      "class_name": "Dog",
+      "label": 1,
+      "width": 176,
+      "height": 500,
+      "pixel_area": 88000,
+      "aspect_ratio": 0.352,
+      "aspect_ratio_extremeness": 2.840909
+    },
+    {
+      "path": "PetImages/Cat/3324.jpg",
+      "class_name": "Cat",
+      "label": 0,
+      "width": 500,
+      "height": 177,
+      "pixel_area": 88500,
+      "aspect_ratio": 2.824859,
+      "aspect_ratio_extremeness": 2.824859
+    },
+    {
+      "path": "PetImages/Cat/5981.jpg",
+      "class_name": "Cat",
+      "label": 0,
+      "width": 150,
+      "height": 423,
+      "pixel_area": 63450,
+      "aspect_ratio": 0.35461,
+      "aspect_ratio_extremeness": 2.82
+    },
+    {
+      "path": "PetImages/Cat/11255.jpg",
+      "class_name": "Cat",
+      "label": 0,
+      "width": 500,
+      "height": 179,
+      "pixel_area": 89500,
+      "aspect_ratio": 2.793296,
+      "aspect_ratio_extremeness": 2.793296
+    },
+    {
+      "path": "PetImages/Cat/728.jpg",
+      "class_name": "Cat",
+      "label": 0,
+      "width": 500,
+      "height": 180,
+      "pixel_area": 90000,
+      "aspect_ratio": 2.777778,
+      "aspect_ratio_extremeness": 2.777778
+    },
+    {
+      "path": "PetImages/Cat/10192.jpg",
+      "class_name": "Cat",
+      "label": 0,
+      "width": 300,
+      "height": 109,
+      "pixel_area": 32700,
+      "aspect_ratio": 2.752294,
+      "aspect_ratio_extremeness": 2.752294
+    },
+    {
+      "path": "PetImages/Dog/12331.jpg",
+      "class_name": "Dog",
+      "label": 1,
+      "width": 200,
+      "height": 73,
+      "pixel_area": 14600,
+      "aspect_ratio": 2.739726,
+      "aspect_ratio_extremeness": 2.739726
+    },
+    {
+      "path": "PetImages/Cat/9819.jpg",
+      "class_name": "Cat",
+      "label": 0,
+      "width": 500,
+      "height": 183,
+      "pixel_area": 91500,
+      "aspect_ratio": 2.73224,
+      "aspect_ratio_extremeness": 2.73224
+    },
+    {
+      "path": "PetImages/Cat/9552.jpg",
+      "class_name": "Cat",
+      "label": 0,
+      "width": 500,
+      "height": 184,
+      "pixel_area": 92000,
+      "aspect_ratio": 2.717391,
+      "aspect_ratio_extremeness": 2.717391
+    },
+    {
+      "path": "PetImages/Cat/8755.jpg",
+      "class_name": "Cat",
+      "label": 0,
+      "width": 79,
+      "height": 214,
+      "pixel_area": 16906,
+      "aspect_ratio": 0.369159,
+      "aspect_ratio_extremeness": 2.708861
+    },
+    {
+      "path": "PetImages/Cat/11512.jpg",
+      "class_name": "Cat",
+      "label": 0,
+      "width": 185,
+      "height": 500,
+      "pixel_area": 92500,
+      "aspect_ratio": 0.37,
+      "aspect_ratio_extremeness": 2.702703
+    },
+    {
+      "path": "PetImages/Dog/11248.jpg",
+      "class_name": "Dog",
+      "label": 1,
+      "width": 100,
+      "height": 37,
+      "pixel_area": 3700,
+      "aspect_ratio": 2.702703,
+      "aspect_ratio_extremeness": 2.702703
+    },
+    {
+      "path": "PetImages/Cat/8542.jpg",
+      "class_name": "Cat",
+      "label": 0,
+      "width": 500,
+      "height": 186,
+      "pixel_area": 93000,
+      "aspect_ratio": 2.688172,
+      "aspect_ratio_extremeness": 2.688172
+    },
+    {
+      "path": "PetImages/Cat/664.jpg",
+      "class_name": "Cat",
+      "label": 0,
+      "width": 75,
+      "height": 200,
+      "pixel_area": 15000,
+      "aspect_ratio": 0.375,
+      "aspect_ratio_extremeness": 2.666667
+    },
+    {
+      "path": "PetImages/Dog/7857.jpg",
+      "class_name": "Dog",
+      "label": 1,
+      "width": 150,
+      "height": 400,
+      "pixel_area": 60000,
+      "aspect_ratio": 0.375,
+      "aspect_ratio_extremeness": 2.666667
+    },
+    {
+      "path": "PetImages/Cat/10988.jpg",
+      "class_name": "Cat",
+      "label": 0,
+      "width": 188,
+      "height": 500,
+      "pixel_area": 94000,
+      "aspect_ratio": 0.376,
+      "aspect_ratio_extremeness": 2.659574
+    },
+    {
+      "path": "PetImages/Cat/5111.jpg",
+      "class_name": "Cat",
+      "label": 0,
+      "width": 377,
+      "height": 143,
+      "pixel_area": 53911,
+      "aspect_ratio": 2.636364,
+      "aspect_ratio_extremeness": 2.636364
+    },
+    {
+      "path": "PetImages/Cat/9675.jpg",
+      "class_name": "Cat",
+      "label": 0,
+      "width": 450,
+      "height": 171,
+      "pixel_area": 76950,
+      "aspect_ratio": 2.631579,
+      "aspect_ratio_extremeness": 2.631579
+    },
+    {
+      "path": "PetImages/Cat/11062.jpg",
+      "class_name": "Cat",
+      "label": 0,
+      "width": 500,
+      "height": 191,
+      "pixel_area": 95500,
+      "aspect_ratio": 2.617801,
+      "aspect_ratio_extremeness": 2.617801
+    },
+    {
+      "path": "PetImages/Cat/482.jpg",
+      "class_name": "Cat",
+      "label": 0,
+      "width": 500,
+      "height": 191,
+      "pixel_area": 95500,
+      "aspect_ratio": 2.617801,
+      "aspect_ratio_extremeness": 2.617801
+    },
+    {
+      "path": "PetImages/Cat/11643.jpg",
+      "class_name": "Cat",
+      "label": 0,
+      "width": 400,
+      "height": 153,
+      "pixel_area": 61200,
+      "aspect_ratio": 2.614379,
+      "aspect_ratio_extremeness": 2.614379
+    },
+    {
+      "path": "PetImages/Cat/3543.jpg",
+      "class_name": "Cat",
+      "label": 0,
+      "width": 319,
+      "height": 124,
+      "pixel_area": 39556,
+      "aspect_ratio": 2.572581,
+      "aspect_ratio_extremeness": 2.572581
+    }
+  ]
+}
