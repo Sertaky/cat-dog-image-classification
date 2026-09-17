@@ -1,0 +1,31 @@
+{
+  "metadata": {
+    "source_manifest": "splits/train.csv",
+    "image_count": 17498,
+    "resize": [
+      224,
+      224
+    ],
+    "resize_resampling": "bilinear",
+    "pixel_scale": "[0, 1]",
+    "channel_order": [
+      "red",
+      "green",
+      "blue"
+    ],
+    "standard_deviation": "population",
+    "calculation": "dataset-wide pixel sums and squared sums"
+  },
+  "normalization": {
+    "mean": [
+      0.4873452324,
+      0.4544898525,
+      0.4166837849
+    ],
+    "std": [
+      0.2603815151,
+      0.2535908669,
+      0.2564516297
+    ]
+  }
+}
