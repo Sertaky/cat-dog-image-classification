@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "random_seed": 42,
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.15,
+    "test": 0.15
+  },
+  "total_sample_count": 24998,
+  "class_labels": {
+    "Cat": 0,
+    "Dog": 1
+  },
+  "counts_per_split": {
+    "train": 17498,
+    "val": 3750,
+    "test": 3750
+  },
+  "counts_per_class_per_split": {
+    "train": {
+      "Cat": 8749,
+      "Dog": 8749
+    },
+    "val": {
+      "Cat": 1875,
+      "Dog": 1875
+    },
+    "test": {
+      "Cat": 1875,
+      "Dog": 1875
+    }
+  },
+  "generation_method": {
+    "strategy": "stratified per-class shuffle with largest-remainder allocation",
+    "random_number_generator": "random.Random(42)",
+    "source_order": "case-insensitive project-relative path",
+    "manifest_row_order": "case-insensitive project-relative path",
+    "quality_filtering": "none"
+  },
+  "source_dataset_root": "PetImages"
+}
