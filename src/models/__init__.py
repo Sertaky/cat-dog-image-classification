@@ -1,5 +1,6 @@
 """Neural network models for the project."""
 
 from .simple_cnn import SimpleCNN
+from .simple_cnn_gap import SimpleCNNGAP
 
-__all__ = ["SimpleCNN"]
+__all__ = ["SimpleCNN", "SimpleCNNGAP"]
