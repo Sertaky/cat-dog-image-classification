@@ -1,0 +1,35 @@
+{
+  "metadata": {
+    "image_loading": "Pillow Image.open followed by convert('RGB')",
+    "raw_data_policy": "read-only; no files modified or excluded",
+    "schema_version": 1,
+    "source_manifests": [
+      "splits/train.csv",
+      "splits/val.csv",
+      "splits/test.csv"
+    ],
+    "transform": "existing deterministic evaluation transform"
+  },
+  "problematic_samples": [
+    {
+      "class_name": "Dog",
+      "label": 1,
+      "message": "Truncated File Read",
+      "path": "PetImages/Dog/9041.jpg",
+      "split": "train",
+      "warning_or_error_type": "UserWarning"
+    }
+  ],
+  "summary": {
+    "problematic_paths_in_multiple_splits": [],
+    "test_samples_inspected": 3750,
+    "total_samples_inspected": 24998,
+    "total_samples_with_exceptions": 0,
+    "total_samples_with_warnings": 1,
+    "train_samples_inspected": 17498,
+    "unique_problematic_paths": [
+      "PetImages/Dog/9041.jpg"
+    ],
+    "val_samples_inspected": 3750
+  }
+}
