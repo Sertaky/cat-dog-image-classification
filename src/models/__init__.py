@@ -3,6 +3,7 @@
 from .deep_cnn_gap_bn import DeepCNNGAPBatchNorm
 from .residual_block import ResidualBlock
 from .residual_cnn import ResidualCNN
+from .resnet18_transfer import ResNet18Transfer
 from .resnet_style_cnn import ResNetStyleCNN
 from .simple_cnn import SimpleCNN
 from .simple_cnn_gap import SimpleCNNGAP
@@ -14,6 +15,7 @@ __all__ = [
     "DeepCNNGAPBatchNorm",
     "ResidualBlock",
     "ResidualCNN",
+    "ResNet18Transfer",
     "ResNetStyleCNN",
     "SimpleCNN",
     "SimpleCNNGAP",
