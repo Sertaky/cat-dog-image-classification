@@ -1,0 +1,6 @@
+# For a CUDA-specific build, install torch and torchvision using the official
+# PyTorch command for your platform/CUDA version before installing this file.
+torch==2.11.0
+torchvision==0.26.0
+Pillow==12.3.0
+matplotlib==3.8.4
