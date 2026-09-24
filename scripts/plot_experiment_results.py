@@ -77,7 +77,7 @@ def configure_plot_style() -> None:
 
 def plot_accuracy_vs_parameters(results: list[ExperimentResult]) -> None:
     """Create a labeled accuracy-versus-parameter scatter plot."""
-    figure, axis = plt.subplots(figsize=(11, 6.5))
+    figure, axis = plt.subplots(figsize=(12, 7))
     parameters = [result.parameters for result in results]
     accuracies = [result.best_val_accuracy for result in results]
     colors = plt.cm.viridis([index / max(len(results) - 1, 1) for index in range(len(results))])
@@ -92,23 +92,25 @@ def plot_accuracy_vs_parameters(results: list[ExperimentResult]) -> None:
         zorder=3,
     )
 
-    vertical_offsets = (10, -16, 11, -18, 10, -15, 10, 10)
+    vertical_offsets = (10, -16, 11, -18, 10, -15, 10, 10, 12, -14)
+    maximum_parameters = max(parameters)
     for index, result in enumerate(results):
+        is_rightmost = result.parameters == maximum_parameters
         axis.annotate(
             result.model,
             (result.parameters, result.best_val_accuracy),
-            xytext=(7, vertical_offsets[index % len(vertical_offsets)]),
+            xytext=(-7 if is_rightmost else 7, vertical_offsets[index]),
             textcoords="offset points",
             fontsize=8.5,
-            ha="left",
+            ha="right" if is_rightmost else "left",
             va="center",
         )
 
     axis.set_xscale("log")
     axis.yaxis.set_major_formatter(PercentFormatter(xmax=1.0, decimals=0))
     axis.set_ylim(min(accuracies) - 0.035, max(accuracies) + 0.035)
-    axis.set_title("Validation Accuracy vs. Trainable Parameters", pad=12, weight="bold")
-    axis.set_xlabel("Trainable parameters (log scale)")
+    axis.set_title("Validation Accuracy vs. Total Parameters", pad=12, weight="bold")
+    axis.set_xlabel("Total parameters (log scale)")
     axis.set_ylabel("Best validation accuracy")
     axis.grid(True, which="major", color="#cbd5e1", linewidth=0.7, alpha=0.7)
     axis.grid(True, which="minor", axis="x", color="#e2e8f0", linewidth=0.5, alpha=0.5)
@@ -119,7 +121,7 @@ def plot_accuracy_vs_parameters(results: list[ExperimentResult]) -> None:
 
 def plot_accuracy_by_model(results: list[ExperimentResult]) -> None:
     """Create a chronological validation-accuracy bar chart."""
-    figure, axis = plt.subplots(figsize=(12, 6.8))
+    figure, axis = plt.subplots(figsize=(14, 7.4))
     models = [result.model for result in results]
     accuracies = [result.best_val_accuracy for result in results]
     colors = plt.cm.viridis([index / max(len(results) - 1, 1) for index in range(len(results))])
@@ -139,7 +141,7 @@ def plot_accuracy_by_model(results: list[ExperimentResult]) -> None:
     axis.set_ylabel("Best validation accuracy")
     axis.grid(True, axis="y", color="#cbd5e1", linewidth=0.7, alpha=0.7)
     axis.set_axisbelow(True)
-    axis.tick_params(axis="x", labelrotation=35)
+    axis.tick_params(axis="x", labelrotation=38)
     for label in axis.get_xticklabels():
         label.set_horizontalalignment("right")
     figure.tight_layout()
