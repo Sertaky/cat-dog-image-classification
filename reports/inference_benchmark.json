@@ -1,0 +1,133 @@
+{
+  "metadata": {
+    "device": "cuda",
+    "device_name": "NVIDIA GeForce RTX 3050 4GB Laptop GPU",
+    "torch_version": "2.11.0+cu128",
+    "cuda_version": "12.8",
+    "dtype": "float32",
+    "input_shape": [
+      3,
+      224,
+      224
+    ],
+    "batch_sizes": [
+      1,
+      8,
+      32
+    ],
+    "warmup_iterations": 20,
+    "timed_iterations": 100,
+    "timing_scope": "model forward pass only",
+    "memory_scope": "runtime device memory during inference"
+  },
+  "models": [
+    {
+      "model": "DeepCNNGAPBatchNorm",
+      "parameters": 422530,
+      "trainable_parameters": 422530,
+      "checkpoint": "checkpoints/deep_cnn_gap_bn_best.pt",
+      "checkpoint_size_bytes": 5103625,
+      "benchmarks": [
+        {
+          "batch_size": 1,
+          "mean_batch_latency_ms": 1.8539,
+          "median_batch_latency_ms": 1.8032,
+          "latency_per_image_ms": 1.8539,
+          "throughput_images_per_second": 539.39,
+          "peak_allocated_memory_bytes": 24715776,
+          "peak_reserved_memory_bytes": 46137344
+        },
+        {
+          "batch_size": 8,
+          "mean_batch_latency_ms": 12.4783,
+          "median_batch_latency_ms": 12.3015,
+          "latency_per_image_ms": 1.5598,
+          "throughput_images_per_second": 641.12,
+          "peak_allocated_memory_bytes": 120943104,
+          "peak_reserved_memory_bytes": 130023424
+        },
+        {
+          "batch_size": 32,
+          "mean_batch_latency_ms": 47.6538,
+          "median_batch_latency_ms": 47.5457,
+          "latency_per_image_ms": 1.4892,
+          "throughput_images_per_second": 671.51,
+          "peak_allocated_memory_bytes": 441577984,
+          "peak_reserved_memory_bytes": 457179136
+        }
+      ]
+    },
+    {
+      "model": "ResNetStyleCNN",
+      "parameters": 4906818,
+      "trainable_parameters": 4906818,
+      "checkpoint": "checkpoints/resnet_style_cnn_best.pt",
+      "checkpoint_size_bytes": 58965091,
+      "benchmarks": [
+        {
+          "batch_size": 1,
+          "mean_batch_latency_ms": 2.3655,
+          "median_batch_latency_ms": 2.2424,
+          "latency_per_image_ms": 2.3655,
+          "throughput_images_per_second": 422.74,
+          "peak_allocated_memory_bytes": 40002048,
+          "peak_reserved_memory_bytes": 50331648
+        },
+        {
+          "batch_size": 8,
+          "mean_batch_latency_ms": 8.853,
+          "median_batch_latency_ms": 8.7421,
+          "latency_per_image_ms": 1.1066,
+          "throughput_images_per_second": 903.65,
+          "peak_allocated_memory_bytes": 85426176,
+          "peak_reserved_memory_bytes": 102760448
+        },
+        {
+          "batch_size": 32,
+          "mean_batch_latency_ms": 30.8814,
+          "median_batch_latency_ms": 30.8108,
+          "latency_per_image_ms": 0.965,
+          "throughput_images_per_second": 1036.22,
+          "peak_allocated_memory_bytes": 254017536,
+          "peak_reserved_memory_bytes": 272629760
+        }
+      ]
+    },
+    {
+      "model": "ResNet18Transfer",
+      "parameters": 11177538,
+      "trainable_parameters": 11177538,
+      "checkpoint": "checkpoints/resnet18_finetune_best.pt",
+      "checkpoint_size_bytes": 134268861,
+      "benchmarks": [
+        {
+          "batch_size": 1,
+          "mean_batch_latency_ms": 4.0259,
+          "median_batch_latency_ms": 3.9639,
+          "latency_per_image_ms": 4.0259,
+          "throughput_images_per_second": 248.39,
+          "peak_allocated_memory_bytes": 65106432,
+          "peak_reserved_memory_bytes": 94371840
+        },
+        {
+          "batch_size": 8,
+          "mean_batch_latency_ms": 14.8975,
+          "median_batch_latency_ms": 14.6444,
+          "latency_per_image_ms": 1.8622,
+          "throughput_images_per_second": 537.0,
+          "peak_allocated_memory_bytes": 110530560,
+          "peak_reserved_memory_bytes": 125829120
+        },
+        {
+          "batch_size": 32,
+          "mean_batch_latency_ms": 51.0938,
+          "median_batch_latency_ms": 51.0889,
+          "latency_per_image_ms": 1.5967,
+          "throughput_images_per_second": 626.3,
+          "peak_allocated_memory_bytes": 279121920,
+          "peak_reserved_memory_bytes": 295698432
+        }
+      ]
+    }
+  ]
+}
